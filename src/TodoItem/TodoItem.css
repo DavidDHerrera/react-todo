@@ -1,0 +1,33 @@
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+  
+  span.Icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  span.Icon-check {
+    color: #00b4d8;
+  }
+  
+  span.Icon-check--active {
+    color: green;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  p.TodoItem-p--complete {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  span.Icon-delete {
+    color: #ff4136;
+  }
+  

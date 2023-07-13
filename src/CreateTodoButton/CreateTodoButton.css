@@ -1,0 +1,24 @@
+button.ModalButton {
+    background-color: #3d9970;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 99999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  button.ModalButton:focus {
+    outline: none;
+  }
+  
+  button.ModalButton:hover {
+    background-color: #2e7d5e;
+  }
+  

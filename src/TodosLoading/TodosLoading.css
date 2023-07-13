@@ -1,0 +1,51 @@
+.LoadingTodo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+  }
+  
+  .LoadingTodo-completeIcon,
+  .LoadingTodo-text,
+  .LoadingTodo-deleteIcon {
+    display: inline-block;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  .LoadingTodo-completeIcon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .LoadingTodo-text {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .LoadingTodo-deleteIcon {
+    width: 20px;
+  }
+  
+  /* Animación de carga */
+  @keyframes skeleton-loading {
+    0% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: -100% 50%;
+    }
+  }
+  
+  .LoadingTodo-completeIcon,
+  .LoadingTodo-text,
+  .LoadingTodo-deleteIcon {
+    background: linear-gradient(90deg, #e0e0e0, #f2f2f2, #e0e0e0);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+  }
+  
